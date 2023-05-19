@@ -49,7 +49,7 @@ const MyProfile = () => {
 
   return (
     <Profile
-      name="My"
+      name={session?.user.name}
       desc="Welcome to your personalized profile page. Share your exceptional poems and inspire others with the beauty of your insight."
       data={myPosts}
       handleEdit={handleEdit}
