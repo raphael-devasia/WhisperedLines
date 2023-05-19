@@ -6,8 +6,8 @@ import PromptCard from "./PromptCard";
 
 const PromptCardList = ({ data, handleTagClick }) => {
   return (
-    <section className="w-full">
-      <div className="mt-10 prompt_layout">
+    
+      <div className="mt-16 prompt_layout">
         {data.map((post) => (
           <PromptCard
             key={post._id}
@@ -16,7 +16,7 @@ const PromptCardList = ({ data, handleTagClick }) => {
           />
         ))}
       </div>
-    </section>
+    
   );
 };
 
