@@ -1,5 +1,6 @@
 import NextAuth from "next-auth/next";
 import GoogleProviders from "next-auth/providers/google";
+
 import { signIn } from "next-auth/react";
 import User from "@models/user";
 import { connectDB } from "@utils/database";
@@ -8,6 +9,13 @@ const handler = NextAuth({
     GoogleProviders({
       clientId: process.env.GOOGLE_ID,
       clientSecret: process.env.GOOGLE_CLIENT_SECRET,
+      authorization: {
+        params: {
+          prompt: "consent",
+          access_type: "offline",
+          response_type: "code",
+        },
+      },
     }),
   ],
   callbacks: {
