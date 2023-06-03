@@ -96,16 +96,6 @@
 .green_gradient {
   @apply bg-gradient-to-r from-green-400 to-green-500 bg-clip-text text-transparent;
 }
-.purple_gradient {
-  @apply bg-gradient-to-r from-purple-500 via-indigo-600 to-blue-500 bg-clip-text text-transparent;
-}
-.teal_gradient {
-  @apply bg-gradient-to-r from-teal-500 via-cyan-600 to-sky-500 bg-clip-text text-transparent;
-}
-.orange_red_gradient {
-  @apply bg-gradient-to-r from-orange-500 via-red-600 to-rose-500 bg-clip-text text-transparent;
-}
-
 
 .blue_gradient {
   @apply bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent;
@@ -131,13 +121,6 @@
   @apply space-y-6 py-8 sm:columns-2 sm:gap-6 xl:columns-3 sm:w-10/12;
 }
 
-@media (max-width: 640px) {
-  .prompt_layout {
-    width: 100%;
-  }
-}
-
-
 /* Feed Component */
 .feed {
   @apply mt-16 mx-auto w-full max-w-xl flex justify-center items-center flex-col gap-2;
@@ -154,7 +137,7 @@
 
 /* Nav Component */
 .logo_text {
-  @apply max-sm:hidden font-satoshi font-semibold text-lg text-primary-orange tracking-wide;
+  @apply max-sm:hidden font-satoshi font-semibold text-lg text-black tracking-wide;
 }
 
 .dropdown {
